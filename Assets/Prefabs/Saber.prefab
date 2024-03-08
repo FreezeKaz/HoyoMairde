@@ -162,7 +162,7 @@ MonoBehaviour:
   sliceableLayer:
     serializedVersion: 2
     m_Bits: 64
-  crossSectionMaterial: {fileID: 0}
+  crossSectionMaterial: {fileID: 2100000, guid: 403711663e7e4234da8b9d6aa34dce8b, type: 2}
   cutForce: 2000
 --- !u!54 &3295720985600610065
 Rigidbody:

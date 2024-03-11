@@ -1,17 +1,18 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PuzzleInteractable : MonoBehaviour
+public class SlidePuzzle : MonoBehaviour
 {
-
-    public Action<PuzzleInteractable> OnCleared;
     // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
 
     // Update is called once per frame
-    public void InteractableCompleted()
+    void Update()
     {
-        OnCleared?.Invoke(this);
+        
     }
 }

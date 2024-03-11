@@ -4,7 +4,7 @@ using EzySlice;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class SlideObject : MonoBehaviour
+public class SliceObject : MonoBehaviour
 {
     public Transform startSlicePoint;
     public Transform endSlicePoint;
@@ -47,6 +47,7 @@ public class SlideObject : MonoBehaviour
             GameObject lowerHull = hull.CreateLowerHull(target, crossSectionMaterial);
             SetupSlicedComponent(lowerHull);
             
+            FindObjectOfType<SlicePuzzleManager>().RegisterSlice();
             Destroy(target);
         }
     }

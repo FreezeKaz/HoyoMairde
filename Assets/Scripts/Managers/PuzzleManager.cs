@@ -13,7 +13,7 @@ public class PuzzleManager : MonoBehaviour
     public Action<PuzzleManager> OnPuzzleComplete;
     private List<bool> _interactablesBool = new List<bool>();
 
-    void Start()
+    public void Start()
     {
         foreach(PuzzleInteractable interactable in Interactables)
         {

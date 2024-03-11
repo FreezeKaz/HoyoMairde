@@ -3045,7 +3045,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1007510797}
   - component: {fileID: 1007510796}
-  - component: {fileID: 1007510795}
   - component: {fileID: 1007510799}
   - component: {fileID: 1007510798}
   m_Layer: 0
@@ -3055,14 +3054,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1007510795
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007510794}
-  m_Enabled: 1
 --- !u!20 &1007510796
 Camera:
   m_ObjectHideFlags: 0
@@ -5373,6 +5364,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1761614412}
   - component: {fileID: 1761614411}
+  - component: {fileID: 1761614413}
   m_Layer: 0
   m_Name: Puzzle Manager
   m_TagString: Untagged
@@ -5408,6 +5400,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1761614413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761614410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cc7091188774f244a15586aca239731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Interactables: []
+  requiredSlices: 10
+  puzzleDuration: 30
 --- !u!1 &1762855482
 GameObject:
   m_ObjectHideFlags: 0
@@ -6494,7 +6501,7 @@ PrefabInstance:
       objectReference: {fileID: 839681752}
     - target: {fileID: 5875719994510705204, guid: 3fa7e71bebf946c4f99ac6716ce3e56c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.764
+      value: 0.889
       objectReference: {fileID: 0}
     - target: {fileID: 5875719994510705204, guid: 3fa7e71bebf946c4f99ac6716ce3e56c, type: 3}
       propertyPath: m_LocalPosition.y

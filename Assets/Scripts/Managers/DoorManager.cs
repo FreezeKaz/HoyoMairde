@@ -10,11 +10,11 @@ public class DoorManager : MonoBehaviour
     private List<bool> _puzzlesBool = new List<bool>();
     public Action<DoorManager> OnDoorOpened;
 
+    private Animator _animator;
 
-    private void Start()
+    private void Awake()
     {
-        Puzzles = new List<PuzzleManager>();
-        _puzzlesBool = new List<bool>();
+        _animator = GetComponent<Animator>();
 
         foreach (PuzzleManager puzzle in Puzzles)
         {
@@ -30,8 +30,8 @@ public class DoorManager : MonoBehaviour
 
         if (_puzzlesBool.All(element => element == true))
         {
-            //animator . open
-            OnDoorOpened.Invoke(this);
+            _animator.SetBool("PuzzleDone",true);
+            OnDoorOpened?.Invoke(this);
         }
           
     }

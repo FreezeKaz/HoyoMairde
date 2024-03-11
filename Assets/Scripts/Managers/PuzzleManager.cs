@@ -15,9 +15,6 @@ public class PuzzleManager : MonoBehaviour
 
     void Start()
     {
-        Interactables = new List<PuzzleInteractable>();
-        _interactablesBool = new List<bool>();
-
         foreach(PuzzleInteractable interactable in Interactables)
         {
             interactable.OnCleared += InteractableCleared;

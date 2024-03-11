@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5659720852303588779}
   - component: {fileID: 3720084519043536080}
+  - component: {fileID: 3700059501401485824}
   m_Layer: 0
   m_Name: TriggerWin
   m_TagString: Untagged
@@ -47,12 +48,24 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.3, y: 0.05, z: 0.4}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3700059501401485824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889324000024589855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1028361004bb9634394a98d27c828f4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2097218706070138498
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,6 +706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2627142127342161480}
   - component: {fileID: 5136543172873843400}
+  - component: {fileID: 3451221542425062523}
   m_Layer: 0
   m_Name: MazePuzzle
   m_TagString: Untagged
@@ -744,6 +758,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 25
+--- !u!114 &3451221542425062523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4767626082041575261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6edc959c7b788742948aa26400522f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Interactables:
+  - {fileID: 0}
 --- !u!1 &6236111643613133301
 GameObject:
   m_ObjectHideFlags: 0

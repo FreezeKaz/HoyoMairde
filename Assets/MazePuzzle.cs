@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class MazePuzzle : MonoBehaviour
 {
-
-    [SerializeField] float _speed = 25;
+    [SerializeField] private float _speed = 25;
 
     private void Update()
     {

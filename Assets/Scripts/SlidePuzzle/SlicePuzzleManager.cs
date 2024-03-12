@@ -64,7 +64,7 @@ public class SlicePuzzleManager : PuzzleManager
         {
             if (isCleared)
             {
-                sliceCounterText.text = $"Cubes: 10/{requiredSlices}";
+                sliceCounterText.text = $"Cubes: {requiredSlices}/{requiredSlices}";
             }
             sliceCounterText.text = $"Cubes: {_slicesMade}/{requiredSlices}";
         }

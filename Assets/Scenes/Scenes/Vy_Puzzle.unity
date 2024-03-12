@@ -5893,7 +5893,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Interactables: []
   requiredSlices: 10
-  puzzleDuration: 10
+  puzzleDuration: 30
   sliceCounterText: {fileID: 316870802}
   timerText: {fileID: 1707679326}
   statusText: {fileID: 2095106829}

@@ -13,6 +13,7 @@ public class SliceObject : MonoBehaviour
     
     public Material crossSectionMaterial;
     public float cutForce = 2000;
+    public float delay = 2f;
     
     
     // Start is called before the first frame update
@@ -49,6 +50,9 @@ public class SliceObject : MonoBehaviour
             
             FindObjectOfType<SlicePuzzleManager>().RegisterSlice();
             Destroy(target);
+            
+            Destroy(upperHull, delay);
+            Destroy(lowerHull, delay);
         }
     }
 

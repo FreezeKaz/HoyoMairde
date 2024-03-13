@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 7024266921316322316}
   - component: {fileID: 6814048662957801637}
   - component: {fileID: 3295720985600610065}
+  - component: {fileID: 6572798731969549031}
   - component: {fileID: 4441436627373039213}
   m_Layer: 0
   m_Name: Saber
@@ -153,7 +154,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5213037082974206075}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8879cb20eab722a48881440c77f27c94, type: 3}
+  m_Script: {fileID: 11500000, guid: c9af57f7619fc1741a2adf4277cc075e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startSlicePoint: {fileID: 1016104002442888044}
@@ -191,6 +192,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6572798731969549031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5213037082974206075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 998c7bb8f40eb0e40829881ce991546c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4441436627373039213
 MonoBehaviour:
   m_ObjectHideFlags: 0

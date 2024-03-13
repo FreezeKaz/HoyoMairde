@@ -13,7 +13,7 @@ public class PuzzleManager : MonoBehaviour
     public Action<PuzzleManager> OnPuzzleComplete;
     private List<bool> _interactablesBool = new List<bool>();
 
-    void Start()
+    public void Start()
     {
         foreach(PuzzleInteractable interactable in Interactables)
         {
@@ -28,9 +28,18 @@ public class PuzzleManager : MonoBehaviour
         _interactablesBool[Interactables.IndexOf(interactable)] = true;
 
         if (_interactablesBool.All(element => element == true))
-            OnPuzzleComplete.Invoke(this);
+            OnPuzzleComplete?.Invoke(this);
     }
 
+    public void RegisterInteractable(PuzzleInteractable interactable)
+    {
+        if (!Interactables.Contains(interactable))
+        {
+            Interactables.Add(interactable);
+            interactable.OnCleared += InteractableCleared;
+            _interactablesBool.Add(false);
+        }
+    }
     
     // Update is called once per frame
     void OnDestroy()

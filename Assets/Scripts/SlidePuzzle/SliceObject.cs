@@ -4,7 +4,7 @@ using EzySlice;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class SlideObject : MonoBehaviour
+public class SliceObject : MonoBehaviour
 {
     public Transform startSlicePoint;
     public Transform endSlicePoint;
@@ -13,6 +13,7 @@ public class SlideObject : MonoBehaviour
     
     public Material crossSectionMaterial;
     public float cutForce = 2000;
+    public float delay = 2f;
     
     
     // Start is called before the first frame update
@@ -47,7 +48,11 @@ public class SlideObject : MonoBehaviour
             GameObject lowerHull = hull.CreateLowerHull(target, crossSectionMaterial);
             SetupSlicedComponent(lowerHull);
             
+            FindObjectOfType<SlicePuzzleManager>().RegisterSlice();
             Destroy(target);
+            
+            Destroy(upperHull, delay);
+            Destroy(lowerHull, delay);
         }
     }
 

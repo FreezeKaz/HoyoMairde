@@ -12,6 +12,6 @@ public class PuzzleInteractable : MonoBehaviour
     // Update is called once per frame
     public void InteractableCompleted()
     {
-        OnCleared.Invoke(this);
+        OnCleared?.Invoke(this);
     }
 }

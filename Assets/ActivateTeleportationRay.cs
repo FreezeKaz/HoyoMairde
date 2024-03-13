@@ -12,13 +12,17 @@ public class ActivateTeleportationRay : MonoBehaviour
     public InputActionProperty leftActivate;
     public InputActionProperty rightActivate;
 
-    public InputActionProperty leftCancel;
-    public InputActionProperty rightCancel;
+
+    public XRDirectInteractor leftDirectGrab;
+    public XRDirectInteractor rightDirectGrab;
+
+    public GameObject leftGrab;
+    public GameObject rightGrab;
 
     // Update is called once per frame
     void Update()
     {
-        leftTeleportation.SetActive(leftCancel.action.ReadValue<float>() == 0 && leftActivate.action.ReadValue<float>() > 0.1f);
-        rightTeleportation.SetActive(rightCancel.action.ReadValue<float>() == 0 && rightActivate.action.ReadValue<float>() > 0.1f);
+        leftTeleportation.SetActive(leftDirectGrab.interactablesSelected.Count == 0 && leftGrab.activeInHierarchy == false  && leftActivate.action.ReadValue<float>() > 0.1f);
+        rightTeleportation.SetActive(rightDirectGrab.interactablesSelected.Count == 0 && rightGrab.activeInHierarchy == false  && rightActivate.action.ReadValue<float>() > 0.1f);
     }
 }

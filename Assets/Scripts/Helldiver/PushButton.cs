@@ -6,7 +6,7 @@ public enum BTType
     UP, DOWN, LEFT, RIGHT
 }
 
-public class HDPushButton : MonoBehaviour
+public class PushButton : MonoBehaviour
 {
     public Action<BTType> OnButtonPressed;
     public BTType type;

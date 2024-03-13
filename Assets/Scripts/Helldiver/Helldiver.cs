@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Helldiver : PuzzleInteractable
 {
-    [SerializeField] List<HDPushButton> _buttonList = new List<HDPushButton>();
+    [SerializeField] List<PushButton> _buttonList = new List<PushButton>();
 
     [SerializeField] List<BTType> _buttonsCode = new List<BTType>();
 
@@ -32,6 +32,14 @@ public class Helldiver : PuzzleInteractable
         if(_codeIndex == _buttonsCode.Count)
         {
             OnCleared?.Invoke(this);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        foreach (var button in _buttonList)
+        {
+            button.OnButtonPressed -= CheckCode;
         }
     }
 

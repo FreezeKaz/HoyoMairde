@@ -17,7 +17,7 @@ public class ButtonFollowVisual : MonoBehaviour
     private Transform _pokeAttachTransform;
 
     private XRBaseInteractable interactable;
-    private bool _isFollowing =false;
+    private bool _isFollowing = false;
 
     // Start is called before the first frame update
     void Start()

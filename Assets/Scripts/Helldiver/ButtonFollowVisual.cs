@@ -17,7 +17,7 @@ public class ButtonFollowVisual : MonoBehaviour
     private Transform _pokeAttachTransform;
 
     private XRBaseInteractable interactable;
-    private bool _isFollowing;
+    private bool _isFollowing = false;
 
     // Start is called before the first frame update
     void Start()
@@ -32,9 +32,9 @@ public class ButtonFollowVisual : MonoBehaviour
 
     public void Follow(BaseInteractionEventArgs hover)
     {
-        if (hover.interactableObject is XRPokeInteractor)
+        if (hover.interactorObject is XRPokeInteractor)
         {
-            XRPokeInteractor interactor = (XRPokeInteractor)hover.interactableObject;
+            XRPokeInteractor interactor = (XRPokeInteractor)hover.interactorObject;
 
             _pokeAttachTransform = interactor.attachTransform;
             _offset = visualObject.position - _pokeAttachTransform.position;
@@ -51,7 +51,7 @@ public class ButtonFollowVisual : MonoBehaviour
 
     public void Reset(BaseInteractionEventArgs hover)
     {
-        if (hover.interactableObject is XRPokeInteractor)
+        if (hover.interactorObject is XRPokeInteractor)
         {
             _isFollowing = false;
         }
@@ -59,7 +59,7 @@ public class ButtonFollowVisual : MonoBehaviour
 
     public void Freeze(BaseInteractionEventArgs hover)
     {
-        if (hover.interactableObject is XRPokeInteractor)
+        if (hover.interactorObject is XRPokeInteractor)
         {
             _freeze = true;
         }

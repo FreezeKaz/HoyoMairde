@@ -4,7 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Hand
   - Anchor
+  - Ball
   layers:
   - Default
   - TransparentFX
@@ -12,9 +14,9 @@ TagManager:
   - 
   - Water
   - UI
-  - Sliceable
-  - Battery
-  - Post Processing
+  - Slice
+  - 
+  - 
   - 
   - 
   - 

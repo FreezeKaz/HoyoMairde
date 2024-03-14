@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 using static UnityEngine.Rendering.DebugUI;
 
 public class ShowMenu : MonoBehaviour
@@ -18,12 +19,16 @@ public class ShowMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (primaryButton.action.IsPressed()) 
-        {
+        if (primaryButton.action.IsPressed()) {
             
-            Vector3 offset = new Vector3(0, 0, 2); // 2 units in front of camera
+            Vector3 offset = new Vector3(0, 0, 2);
             locomotionMenu.transform.position = playerHead.TransformPoint(offset);
-            locomotionMenu.SetActive(true);
+            locomotionMenu.transform.rotation = playerHead.transform.rotation;
+
+            if (locomotionMenu.activeInHierarchy)
+                locomotionMenu.SetActive(false);
+            else
+                locomotionMenu.SetActive(true) ;
         }
     }
 }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7025451148812442555}
   - component: {fileID: 1071706348852329273}
   - component: {fileID: 1796437418477728885}
+  - component: {fileID: 7968039965545685239}
   m_Layer: 0
   m_Name: ShortBurst
   m_TagString: Untagged
@@ -4600,3 +4601,16 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &7968039965545685239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2848751761223852316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8161215efe38d4468a3461c4e522186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 1071706348852329273}

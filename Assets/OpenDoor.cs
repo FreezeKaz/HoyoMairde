@@ -7,11 +7,13 @@ public class OpenDoor : PuzzleManager
     private PushButton _pushButton;
     private void Start()
     {
+        _pushButton = GetComponent<PushButton>();
         _pushButton.OnButtonPressed += OpenDoorButton;
     }
 
     private void OpenDoorButton(BTType type)
     {
+        Debug.Log("Open door");
         OnPuzzleComplete?.Invoke(this);
     }
 

@@ -12429,6 +12429,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 466816, guid: 5bceb99c9fa1f2a4bb9692e518bec46c, type: 3}
   m_PrefabInstance: {fileID: 1201207312}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1778591742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 187554, guid: 820591594dcfa124d8a9c5d016d6c22c, type: 3}
+  m_PrefabInstance: {fileID: 1882664204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1778591748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778591742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c12d0ac4e220d41949c4f67862747f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Puzzles:
+  - {fileID: 0}
 --- !u!1001 &1799876170
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13132,16 +13151,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8891740439702551693, guid: 820591594dcfa124d8a9c5d016d6c22c, type: 3}
       propertyPath: Puzzles.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8891740439702551693, guid: 820591594dcfa124d8a9c5d016d6c22c, type: 3}
       propertyPath: Puzzles.Array.data[0]
       value: 
-      objectReference: {fileID: 2036474131}
+      objectReference: {fileID: 100369867}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 187554, guid: 820591594dcfa124d8a9c5d016d6c22c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1778591748}
   m_SourcePrefab: {fileID: 100100000, guid: 820591594dcfa124d8a9c5d016d6c22c, type: 3}
 --- !u!1001 &1883794773
 PrefabInstance:

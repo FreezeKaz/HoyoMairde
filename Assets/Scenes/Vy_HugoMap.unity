@@ -1502,6 +1502,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8a8a07f800d7cd444bead7e52daa73f4, type: 2}
+    - target: {fileID: 4441436627373039213, guid: 32007c07be04a1e45ba69ee9c50dbd64, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 5213037082974206075, guid: 32007c07be04a1e45ba69ee9c50dbd64, type: 3}
       propertyPath: m_Name
       value: Saber
@@ -1729,6 +1733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
+  _audio: {fileID: 0}
 --- !u!1001 &185296189
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3442,6 +3447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 3
+  _audio: {fileID: 0}
 --- !u!1001 &274847977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3896,6 +3902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
+  _audio: {fileID: 0}
 --- !u!1001 &341783907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8358,6 +8365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  _audio: {fileID: 0}
 --- !u!1001 &948824624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13028,6 +13036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 3
+  _audio: {fileID: 0}
 --- !u!1001 &1441204143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17679,6 +17688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  _audio: {fileID: 0}
 --- !u!1 &2123965713
 GameObject:
   m_ObjectHideFlags: 0

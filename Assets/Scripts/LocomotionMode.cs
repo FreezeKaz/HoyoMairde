@@ -22,6 +22,7 @@ public class LocomotionMode : MonoBehaviour
     private bool _locomotionType;
     void Start()
     {
+        _locomotionType = true;
         _pushButton.OnButtonPressed += ChangeLocomotion;
     }
 

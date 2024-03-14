@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class Helldiver : PuzzleInteractable
@@ -19,18 +20,19 @@ public class Helldiver : PuzzleInteractable
 
     private void CheckCode(BTType type)
     {
+        Debug.Log("checking");
         if (type == _buttonsCode[_codeIndex])
         {
+            Debug.Log("index");
             _codeIndex++;
-            return;
             //play sound and animation
         }
         else
         {
-            _codeIndex--;
+            _codeIndex = 0;
             //play sound and animation
         }
-        if(_codeIndex == _buttonsCode.Count)
+        if (_codeIndex == _buttonsCode.Count)
         {
             OnCleared?.Invoke(this);
         }

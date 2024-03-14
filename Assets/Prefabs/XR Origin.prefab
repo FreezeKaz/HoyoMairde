@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3606580294896083745}
   - component: {fileID: 7568507606945515498}
   - component: {fileID: 4913156466989483785}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Left Teleportation Ray
   m_TagString: Hand
   m_Icon: {fileID: 0}
@@ -671,7 +671,7 @@ GameObject:
   - component: {fileID: 2890831960137240026}
   - component: {fileID: 2673107268937683387}
   - component: {fileID: 2390696819508449973}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Right Teleportation Ray
   m_TagString: Hand
   m_Icon: {fileID: 0}
@@ -1328,7 +1328,7 @@ GameObject:
   - component: {fileID: 3524004174125309583}
   - component: {fileID: 677363605242507572}
   - component: {fileID: 4328503068407320688}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Right Grab Ray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1982,7 +1982,7 @@ GameObject:
   - component: {fileID: 7681257359069183984}
   - component: {fileID: 5436659187609019661}
   - component: {fileID: 6486286431462902891}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 'Right Hand '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2352,7 +2352,7 @@ GameObject:
   - component: {fileID: 5350186064859623081}
   - component: {fileID: 5492666431166712160}
   - component: {fileID: 4323575798381386439}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Reticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2433,7 +2433,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4678971742262581731}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Camera Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2482,7 +2482,7 @@ GameObject:
   - component: {fileID: 133495955562026815}
   - component: {fileID: 8700591935376266079}
   - component: {fileID: 2890261307877027659}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: XR Origin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2823,7 +2823,7 @@ GameObject:
   - component: {fileID: 4112111430973375915}
   - component: {fileID: 6028707328557996612}
   - component: {fileID: 424251216598561713}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Reticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2908,7 +2908,7 @@ GameObject:
   - component: {fileID: 1225526275824441912}
   - component: {fileID: 7788505448693399628}
   - component: {fileID: 2738982628492370258}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -3157,7 +3157,7 @@ GameObject:
   - component: {fileID: 6932994949897466163}
   - component: {fileID: 7096002464459365834}
   - component: {fileID: 8977271752555017488}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Left Grab Ray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3811,7 +3811,7 @@ GameObject:
   - component: {fileID: 483164509832753652}
   - component: {fileID: 7882757054752847634}
   - component: {fileID: 8211599278221811282}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Left Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4181,6 +4181,10 @@ PrefabInstance:
     - target: {fileID: 8429981633443581377, guid: 1670dca8ee98f864eb412b51a24c08e1, type: 3}
       propertyPath: m_Name
       value: TunnelingVignette
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581377, guid: 1670dca8ee98f864eb412b51a24c08e1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8429981633443581382, guid: 1670dca8ee98f864eb412b51a24c08e1, type: 3}
       propertyPath: m_LocalPosition.x

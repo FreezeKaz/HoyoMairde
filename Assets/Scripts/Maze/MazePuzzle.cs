@@ -10,8 +10,8 @@ public class MazePuzzle : MonoBehaviour
 
     private void Start()
     {
-        _pushButtonLeft.OnButtonPressed += Turn;
-        _pushButtonRight.OnButtonPressed += Turn;
+        _pushButtonLeft.OnButtonHold += Turn;
+        _pushButtonRight.OnButtonHold += Turn;
     }
 
 
@@ -30,7 +30,7 @@ public class MazePuzzle : MonoBehaviour
 
     private void OnDestroy()
     {
-        _pushButtonLeft.OnButtonPressed -= Turn;
-        _pushButtonRight.OnButtonPressed -= Turn;
+        _pushButtonLeft.OnButtonHold -= Turn;
+        _pushButtonRight.OnButtonHold -= Turn;
     }
 }

@@ -17,13 +17,16 @@ public class LocomotionMode : MonoBehaviour
     [SerializeField] ActionBasedSnapTurnProvider actionBasedSnapTurnProvider;
 
 
-    [SerializeField] private PushButton _pushButton;
+    [SerializeField] private PushButton _pushButtonLocomotion;
+    [SerializeField] private PushButton _pushButtonRotation;
 
     private bool _locomotionType;
+    private bool _rotationType;
     void Start()
     {
         _locomotionType = true;
-        _pushButton.OnButtonPressed += ChangeLocomotion;
+        _pushButtonLocomotion.OnButtonPressed += ChangeLocomotion;
+        _pushButtonRotation.OnButtonPressed += ChangeTurning;
     }
 
     // Update is called once per frame
@@ -49,9 +52,11 @@ public class LocomotionMode : MonoBehaviour
         }
     }
 
-    public void ChangeTurning(int val)
+    public void ChangeTurning(BTType type)
     {
-        if (val == 0)
+
+        _rotationType = !_rotationType;
+        if (_rotationType)
         {
             actionBasedContinuousTurnProvider.enabled = false;
             actionBasedSnapTurnProvider.enabled = true;
@@ -66,7 +71,8 @@ public class LocomotionMode : MonoBehaviour
     private void OnDestroy()
     {
 
-        _pushButton.OnButtonPressed -= ChangeLocomotion;
+        _pushButtonLocomotion.OnButtonPressed -= ChangeLocomotion;
+        _pushButtonRotation.OnButtonPressed -= ChangeTurning;
 
     }
 }

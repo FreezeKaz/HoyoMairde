@@ -61,4 +61,11 @@ public class LocomotionMode : MonoBehaviour
             actionBasedSnapTurnProvider.enabled = false;
         }
     }
+
+    private void OnDestroy()
+    {
+
+        _pushButton.OnButtonPressed -= ChangeLocomotion;
+
+    }
 }

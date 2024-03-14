@@ -48,8 +48,7 @@ public class GameManager : MonoBehaviour
 
         if (_doorsBool.All(element => element == true))
             UnlockBoss();
-
-
+        
     }
 
     private void UnlockBoss()

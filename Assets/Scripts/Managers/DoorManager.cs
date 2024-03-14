@@ -33,7 +33,12 @@ public class DoorManager : MonoBehaviour
             _animator.SetBool("PuzzleDone",true);
             OnDoorOpened?.Invoke(this);
         }
-          
+    }
+
+    public void OpenDoor()
+    {
+        _animator.SetBool("PuzzleDone",true);
+        OnDoorOpened?.Invoke(this);
     }
 
     private void OnDestroy()

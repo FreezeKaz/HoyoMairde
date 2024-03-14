@@ -22,6 +22,7 @@ public class Helldiver : PuzzleInteractable
         if (type == _buttonsCode[_codeIndex])
         {
             _codeIndex++;
+            return;
             //play sound and animation
         }
         else

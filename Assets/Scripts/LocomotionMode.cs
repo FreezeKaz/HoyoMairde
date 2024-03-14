@@ -16,9 +16,13 @@ public class LocomotionMode : MonoBehaviour
     [SerializeField] ActionBasedContinuousTurnProvider actionBasedContinuousTurnProvider;
     [SerializeField] ActionBasedSnapTurnProvider actionBasedSnapTurnProvider;
 
+
+    [SerializeField] private PushButton _pushButton;
+
+    private bool _locomotionType;
     void Start()
     {
-        
+        _pushButton.OnButtonPressed += ChangeLocomotion;
     }
 
     // Update is called once per frame
@@ -27,9 +31,11 @@ public class LocomotionMode : MonoBehaviour
         
     }
 
-    public void ChangeLocomotion(int val)
+    public void ChangeLocomotion(BTType type)
     {
-        if (val == 0) {
+        Debug.Log(_locomotionType);
+        _locomotionType = !_locomotionType;
+        if (_locomotionType) {
             actionBasedContinuousMoveProvider.enabled = false;
             teleportationProvider.enabled = true; 
             activateTeleportationRay.enabled = true;

@@ -29,6 +29,8 @@ public class PuzzleManager : MonoBehaviour
 
         if (_interactablesBool.All(element => element == true))
             OnPuzzleComplete?.Invoke(this);
+        
+        Debug.Log("PuzzleManager: Puzzle Cleared!");
     }
 
     public void RegisterInteractable(PuzzleInteractable interactable)

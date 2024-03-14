@@ -5667,17 +5667,6 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1707679326 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7179145765391870530, guid: c6ad2ac2f2233814abaea2a694378c51, type: 3}
-  m_PrefabInstance: {fileID: 8585286983067782778}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1761614410
 GameObject:
   m_ObjectHideFlags: 0
@@ -5738,9 +5727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Interactables: []
   requiredSlices: 10
-  puzzleDuration: 30
   sliceCounterText: {fileID: 316870802}
-  timerText: {fileID: 1707679326}
   statusText: {fileID: 2095106829}
 --- !u!1 &1762855482
 GameObject:
@@ -6931,7 +6918,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6567671225302545070, guid: c6ad2ac2f2233814abaea2a694378c51, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2
+      value: 3.37
       objectReference: {fileID: 0}
     - target: {fileID: 6567671225302545070, guid: c6ad2ac2f2233814abaea2a694378c51, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

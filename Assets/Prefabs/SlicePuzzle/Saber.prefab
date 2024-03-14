@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 2016552438658602791}
   serializedVersion: 2
   m_LocalRotation: {x: -0.15737876, y: 0.41619772, z: 0.073386915, w: 0.89253896}
-  m_LocalPosition: {x: 0, y: -0.825, z: 1}
+  m_LocalPosition: {x: 0, y: -0.8, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 7024266921316322316}
   - component: {fileID: 6814048662957801637}
   - component: {fileID: 3295720985600610065}
-  - component: {fileID: 6572798731969549031}
   - component: {fileID: 4441436627373039213}
   m_Layer: 0
   m_Name: Saber
@@ -63,8 +62,8 @@ Transform:
   m_GameObject: {fileID: 5213037082974206075}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.164, y: 0.40320003, z: 1.38}
-  m_LocalScale: {x: 0.03, y: 0.4, z: 0.03}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.03, y: 0.6, z: 0.03}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1016104002442888044}
@@ -193,18 +192,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6572798731969549031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5213037082974206075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 998c7bb8f40eb0e40829881ce991546c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4441436627373039213
 MonoBehaviour:
   m_ObjectHideFlags: 0

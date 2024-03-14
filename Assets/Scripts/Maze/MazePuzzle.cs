@@ -14,6 +14,7 @@ public class MazePuzzle : MonoBehaviour
         _pushButtonRight.OnButtonPressed += Turn;
     }
 
+
     private void Turn(BTType type)
     {
         switch (type)

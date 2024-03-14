@@ -12,12 +12,12 @@ public class PushButton : MonoBehaviour
     public BTType type;
     [SerializeField] private AudioSource _audio;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if(other.gameObject.layer == 7)
+        if (other.gameObject.layer == 7)
         {
             OnButtonPressed?.Invoke(type);
-            if(_audio != null)  _audio.Play();
+            if (_audio != null) _audio.Play();
         }
     }
 }

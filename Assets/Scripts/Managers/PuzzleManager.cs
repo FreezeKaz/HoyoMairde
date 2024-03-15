@@ -10,6 +10,8 @@ public class PuzzleManager : MonoBehaviour
 
     [SerializeField] public List<PuzzleInteractable> Interactables;
 
+    [SerializeField] private GameObject _clearParticles;
+
     public Action<PuzzleManager> OnPuzzleComplete;
     private List<bool> _interactablesBool = new List<bool>();
 
@@ -28,7 +30,12 @@ public class PuzzleManager : MonoBehaviour
         _interactablesBool[Interactables.IndexOf(interactable)] = true;
 
         if (_interactablesBool.All(element => element == true))
+        {
             OnPuzzleComplete?.Invoke(this);
+            Destroy(_clearParticles);
+        }
+           
+
     }
 
     public void RegisterInteractable(PuzzleInteractable interactable)
